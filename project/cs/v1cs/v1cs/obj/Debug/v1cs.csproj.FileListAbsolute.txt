@@ -1,0 +1,13 @@
+D:\v1cs\v1cs\bin\Debug\v1cs.exe.config
+D:\РГР2к\v1cs\v1cs\bin\Debug\v1cs.exe.config
+D:\РГР2к\v1cs\v1cs\bin\Debug\v1cs.exe
+D:\РГР2к\v1cs\v1cs\bin\Debug\v1cs.pdb
+D:\РГР2к\v1cs\v1cs\obj\Debug\v1cs.csprojResolveAssemblyReference.cache
+D:\РГР2к\v1cs\v1cs\obj\Debug\v1cs.exe
+D:\РГР2к\v1cs\v1cs\obj\Debug\v1cs.pdb
+D:\РГР2к\project\cs\v1cs\v1cs\bin\Debug\v1cs.exe.config
+D:\РГР2к\project\cs\v1cs\v1cs\obj\Debug\v1cs.exe
+D:\РГР2к\project\cs\v1cs\v1cs\obj\Debug\v1cs.pdb
+D:\AbrashinaIS5201\project\cs\v1cs\v1cs\bin\Debug\v1cs.exe.config
+D:\AbrashinaIS5201\project\cs\v1cs\v1cs\obj\Debug\v1cs.exe
+D:\AbrashinaIS5201\project\cs\v1cs\v1cs\obj\Debug\v1cs.pdb

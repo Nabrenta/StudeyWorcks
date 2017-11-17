@@ -1,0 +1,89 @@
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Об*єктно-орієнтована декомпозиція предметного середовища - версія 1</title>
+	<style>
+	A {
+		color: black;
+	}
+	A:visited {
+		color: black;
+	}
+	A:hover {
+		color: red;
+	}
+	.linc {
+		display: inline;
+		border: 3px ridge #ffaa77;
+		margin: 1px;
+		background-color: #efc189;
+	}
+	.linc2{
+		border: 3px ridge #ffaa77;
+		background-color: #efc189;
+		width:23%
+	}
+	.content{
+		border: 5px ridge #5634ff;
+		position: absolute;
+				top: 20%;
+		left: 25%;
+		background-color: #efc189;
+	}
+	.menu1 {
+		margin-top: 1%;
+	} 
+	</style>
+</head>
+<body bgcolor="#d9a149">
+
+<h1><a href="../../index.htm">На Головну</a></h1>
+
+<div class = "linc"><a href="../version1/p1.htm">Версія 1</a></div>
+<div class = "linc"><a href="../version2/p12.htm">Версія 2</a></div>
+<div class = "linc"><a href="../version3/p13.htm">Версія 3</a></div>
+<div class = "linc"><a href="../version4/p14.htm">Версія 4</a></div>
+<div class = "linc"><a href="../version5/p15.htm">Версія 5</a></div>
+<div class = "linc"><a href="../version6/p16.htm">Версія 6</a></div>
+<div class = "linc"><a href="p17.htm"><font color="#0000FF">Версія 7</font></a></div>
+
+<div class = "menu1">
+<div class = "linc2"><a href="p17.htm"><font color="#0000FF">Характеристика об*єкта декомпозиції</font></a></div>
+<div class = "linc2"><a href="p37.htm">Проектування ПЗ</a> </div>
+<div class = "linc2"><a href="p47.htm">Кодування</a></div>
+<div class = "linc2"><a href="p57.htm">Впровадження та супроводження</a></div>
+<div class = "linc2"><a href="p67.htm">Висновки</a></div>
+</div>
+
+<div class = "content">
+<h2><span lang="uk">Постановка задачі</span></h2>
+<p><span lang="uk">Реалізувати обробку виключних ситуацій, що можуть виникнути:</span></p>
+<ul>
+	<li><span lang="uk">при неуспішному пошуку книги, читача чи запису у списку книг, якими 
+користувався читач;</span></li>
+	<li><span lang="uk">при спроби звернутися до порожніх списків книг, читачів або 
+книг, якими користувався читач;</span></li>
+	<li><span lang="uk">при спробі видачі книги користувачу, що має 
+борги.</span></li>
+</ul>
+<h2><span lang="uk">Програмна реалізація</span></h2>
+<p><span lang="ru">Створити класи виключних ситуацій:</span></p>
+<ul>
+	<li><span lang="ru">ErrorBook, що 
+обробляє виключнуситуацію &quot;невдалй пошук книги&quot;;</span></li>
+	<li><span lang="ru">EmptyCatalog, що обробляє 
+виключну ситуацію &quot;каталог порожній&quot;;</span></li>
+	<li><span lang="ru">ErrorUser, що обробляє виключну ситуацію &quot;невірний 
+логін або пароль&quot;,</span></li>
+	<li><span lang="ru">EmptyUsList, що обробляє виключну ситуацію &quot;немає 
+зареєстрованих користувачів&quot;;</span></li>
+	<li><span lang="ru">Debth, що обробляє виключну ситуацію &quot;користувач 
+має борги і намагається взяти книгу&quot;;</span></li>
+	<li></li>
+</ul>
+</div>
+
+</body>
+
+</html>

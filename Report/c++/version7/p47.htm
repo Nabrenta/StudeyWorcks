@@ -1,0 +1,871 @@
+<html>
+
+
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Об*єктно-орієнтована декомпозиція предметного середовища - версія 1</title>
+	<style>
+	A {
+		color: black;
+	}
+	A:visited {
+		color: black;
+	}
+	A:hover {
+		color: red;
+	}
+	.linc {
+		display: inline;
+		border: 3px ridge #ffaa77;
+		margin: 1px;
+		background-color: #efc189;
+	}
+	.linc2{
+		border: 3px ridge #ffaa77;
+		background-color: #efc189;
+		width:23%
+	}
+	.content{
+		border: 5px ridge #5634ff;
+		position: absolute;
+				top: 20%;
+		left: 25%;
+		background-color: #efc189;
+	}
+	.menu1 {
+		margin-top: 1%;
+	} 
+	</style>
+</head>
+<body bgcolor="#d9a149">
+
+<h1><a href="../../index.htm">На Головну</a></h1>
+
+<div class = "linc"><a href="../version1/p1.htm">Версія 1</a></div>
+<div class = "linc"><a href="../version2/p12.htm">Версія 2</a></div>
+<div class = "linc"><a href="../version3/p13.htm">Версія 3</a></div>
+<div class = "linc"><a href="../version4/p14.htm">Версія 4</a></div>
+<div class = "linc"><a href="../version5/p15.htm">Версія 5</a></div>
+<div class = "linc"><a href="../version6/p16.htm">Версія 6</a></div>
+<div class = "linc"><a href="p17.htm"><font color="#0000FF">Версія 7</font></a></div>
+
+<div class = "menu1">
+<div class = "linc2"><a href="p17.htm">Характеристика об*єкта декомпозиції</a></div>
+<div class = "linc2"><a href="p37.htm">Проектування ПЗ</a> </div>
+<div class = "linc2"><a href="p47.htm"><font color="#0000FF">Кодування</font></a></div>
+<div class = "linc2"><a href="p57.htm">Впровадження та супроводження</a></div>
+<div class = "linc2"><a href="p67.htm">Висновки</a></div>
+</div>
+
+<div class = "content">
+
+<h2></h2>
+<h2 align="center">HIPO-<span lang="uk">діаграма</span></h2>
+<p><img border="0" src="HIPO5.png" width="1440" height="385"></p>
+<h2 align="center">Діаграма станів (об*єкт <span lang="en-us">User)</span>:</h2>
+<p align="center"><img border="0" src="p46.ht2.jpg"></p>
+<h2 align="center"><span lang="uk">Опис програми:</span></h2>
+<table border="1" width="100%">
+	<tr>
+		<td><span lang="uk"><b>Прототип функції</b></span></td>
+		<td><b><span lang="uk">Семантика функції</span></b></td>
+		<td><b><span lang="uk">Параментри</span></b></td>
+		<td><b><span lang="uk">Семантика параметрів</span></b></td>
+	</tr>
+	<tr>
+		<td>Book::Book()</td>
+		<td><span lang="uk">Конструктор по замовченню</span></td>
+		<td><span lang="uk">Без параметрів</span></td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>Book:: Book(const Book&amp; otherBook)</td>
+		<td><span lang="uk">Конструктор копії</span></td>
+		<td>const Book&amp; otherBook</td>
+		<td><span lang="uk">Посилання на об*єкт, що копіюється</span></td>
+	</tr>
+	<tr>
+		<td>Book::~Book()</td>
+		<td><span lang="uk">Деструктор</span></td>
+		<td><span lang="uk">Без параметрів</span></td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>Catalog::Catalog(const std::vector&lt;Book&gt;&amp;mBooks)</td>
+		<td><span lang="uk">Конструктор ініціалізації</span></td>
+		<td>const std::vector&lt;Book&gt;&amp;mBooks</td>
+		<td><span lang="uk">Посилання на змінні, значеннями яких ініціалізуються 
+		атрибути</span></td>
+	</tr>
+	<tr>
+		<td>Catalog::Catalog(const Catalog&amp;cat)</td>
+		<td><span lang="uk">Конструктор копії</span></td>
+		<td>const Catalog&amp;cat</td>
+		<td><span lang="uk">Посилання на об*єкт, що копіюється</span></td>
+	</tr>
+	<tr>
+		<td>Catalog::~Catalog()</td>
+		<td><span lang="uk">Деструктор</span></td>
+		<td><span lang="uk">Без параметрів</span></td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>Librariar::Librariar()</td>
+		<td><span lang="uk">Конструктор за замовченням</span></td>
+		<td><span lang="uk">Без параметрів</span></td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>Librariar::Librariar(int i)</td>
+		<td><span lang="uk">Конструктор перетворення типів</span></td>
+		<td>int i</td>
+		<td><span lang="uk">Посилання на змінну, тип якої перетворюється</span></td>
+	</tr>
+	<tr>
+		<td>Librariar::Librariar(const Librariar &amp;libr)</td>
+		<td><span lang="uk">Конструктор копії</span></td>
+		<td>const Librariar &amp;libr</td>
+		<td><span lang="uk">Посилання на об*єкт, що копіюється</span></td>
+	</tr>
+	<tr>
+		<td>Librariar::~Librariar()</td>
+		<td><span lang="uk">Деструктор</span></td>
+		<td><span lang="uk">Без параметрів</span></td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>Library::Library(bool flag)</td>
+		<td><span lang="uk">Конструктор з формальнім параметром (виконує роль 
+		конструктора по замовченню)</span></td>
+		<td>bool flag</td>
+		<td><span lang="uk">Формальній параметр, забезпечує коректне виконання 
+		конструктора</span></td>
+	</tr>
+	<tr>
+		<td>Library::Library(int numb1, int numb2, bool light, int mode)</td>
+		<td><span lang="uk">Конструктор ініціалізації</span></td>
+		<td>int numb1, int numb2, bool light, int mode</td>
+		<td><span lang="uk">Змінні, значеннями яких ініціалізуються атрибути</span></td>
+	</tr>
+	<tr>
+		<td>Library::Library(const Library&amp;lib)</td>
+		<td><span lang="uk">Конструктор копії</span></td>
+		<td>const Library&amp;lib</td>
+		<td><span lang="uk">Посилання на об*єкт, що копіюється</span></td>
+	</tr>
+	<tr>
+		<td>Library::~Library()</td>
+		<td><span lang="uk">Деструктор</span></td>
+		<td><span lang="uk">Без параметрів</span></td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>PrintScanner::PrintScanner()</td>
+		<td><span lang="uk">Конструктор за замовченням</span></td>
+		<td><span lang="uk">Без параметрів</span></td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>PrintScanner::PrintScanner(const PrintScanner&amp;prin)</td>
+		<td><span lang="uk">Конструктор копії</span></td>
+		<td>const PrintScanner&amp;prin</td>
+		<td><span lang="uk">Посилання на об*єкт, що копіюється</span></td>
+	</tr>
+	<tr>
+		<td>PrintScanner::~PrintScanner()</td>
+		<td><span lang="uk">Деструктор</span></td>
+		<td><span lang="uk">Без параметрів</span></td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>ReadingRoom::ReadingRoom()</td>
+		<td><span lang="uk">Конструктор за замовченням</span></td>
+		<td><span lang="uk">Без параметрів</span></td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>ReadingRoom::ReadingRoom(const ReadingRoom&amp; read)</td>
+		<td><span lang="uk">Конструктор копії</span></td>
+		<td>const ReadingRoom&amp; read</td>
+		<td><span lang="uk">Посилання на об*єкт, що копіюється</span></td>
+	</tr>
+	<tr>
+		<td>ReadingRoom::~ReadingRoom()</td>
+		<td><span lang="uk">Деструктор</span></td>
+		<td><span lang="uk">Без параметрів</span></td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>User::User()</td>
+		<td><span lang="uk">Конструктор за замовченням</span></td>
+		<td><span lang="uk">Без параметрів</span></td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>User::User(const User&amp;us)</td>
+		<td><span lang="uk">Конструктор копії</span></td>
+		<td>const User&amp;us</td>
+		<td><span lang="uk">Посилання на об*єкт, що копіюється</span></td>
+	</tr>
+	<tr>
+		<td>User::~User()</td>
+		<td><span lang="uk">Деструктор</span></td>
+		<td><span lang="uk">Без параметрів</span></td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>UserList::UserList(const std::vector&lt;User&gt;&amp;mUsers)</td>
+		<td><span lang="uk">Конструктор ініціалізації</span></td>
+		<td>const std::vector&lt;User&gt;&amp;mUsers</td>
+		<td><span lang="uk">Посилання на змінні, значеннями яких ініціалізуються 
+		атрибути</span></td>
+	</tr>
+	<tr>
+		<td>UserList::UserList(const UserList&amp;uslist)</td>
+		<td><span lang="uk">Конструктор копії</span></td>
+		<td>const UserList&amp;uslist</td>
+		<td><span lang="uk">Посилання на об*єкт, що копіюється</span></td>
+	</tr>
+	<tr>
+		<td height="24">UserList::~UserList()</td>
+		<td height="24"><span lang="uk">Деструктор</span></td>
+		<td height="24"><span lang="uk">Без параметрів</span></td>
+		<td height="24">&nbsp;</td>
+	</tr>
+	<tr>
+		<td>std::string Book::getName()</td>
+		<td>Аксесор назви книги</td>
+		<td>Без параметрів</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>std::string Book::getSubj()</td>
+		<td>Аксесор предметної області книги</td>
+		<td>Без параметрів</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>bool Book::getAvail()</td>
+		<td>Предикатна функція</td>
+		<td>Без параметрів</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>limit Book::getLimit()</td>
+		<td>Аксесор обмежень на видачу книги</td>
+		<td>Без параметрів</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>date Book::getDat()</td>
+		<td>Аксесор дати видачі книги</td>
+		<td>Без параметрів</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>int Book::getStay()</td>
+		<td>Аксесор стану книги</td>
+		<td>Без параметрів</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>std::string Book::getCode()</td>
+		<td>Аксесор коду книги</td>
+		<td>Без параметрів</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>int Book::getCost()</td>
+		<td>Аксесор вартості книги</td>
+		<td>Без параметрів</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>types Book::getType()</td>
+		<td>Аксесор типу книги</td>
+		<td>Без параметрів</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>void Book::setName(std::string name)</td>
+		<td>Встановлення назви книги (утиліта)</td>
+		<td>std::string name</td>
+		<td>Нове ім*я книги</td>
+	</tr>
+	<tr>
+		<td>void Book::setLimit(int i)</td>
+		<td>Встановлення обмежень на видачу книги (утиліта)</td>
+		<td>int i</td>
+		<td>Код нового обмеження</td>
+	</tr>
+	<tr>
+		<td>void Book::setDat(date dat)</td>
+		<td>Встановлення дати видачі книги</td>
+		<td>date dat</td>
+		<td>Нова дата видачі книги</td>
+	</tr>
+	<tr>
+		<td>void Book::setStay(int situate)</td>
+		<td>Встановлення стану книги</td>
+		<td>int situate</td>
+		<td>Оцінка стану книги</td>
+	</tr>
+	<tr>
+		<td>void Book::setCost(int summ)</td>
+		<td>Встановлення вартості книги</td>
+		<td>int summ</td>
+		<td>Вартість книги</td>
+	</tr>
+	<tr>
+		<td>void Book::setType(int typ)</td>
+		<td>Встановлення типу книги</td>
+		<td>int typ</td>
+		<td>Код типу книги</td>
+	</tr>
+	<tr>
+		<td>void Book::ChangeBook(void)</td>
+		<td>Ітератор зміни деяких властивостей книги</td>
+		<td>Без параметрів</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>void Book::OutputInformation()</td>
+		<td>Ітератор виведення інформації про книги</td>
+		<td>Без параметрів</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>void Catalog::CBook(int n)</td>
+		<td>Зміна вибраної книги</td>
+		<td>int n</td>
+		<td>Номер книги, що потрібно змінити</td>
+	</tr>
+	<tr>
+		<td>void Catalog::GBook(int n)</td>
+		<td>Виведення інформації про вибрану книги</td>
+		<td>int n</td>
+		<td>Номер книги, дані про яку потрібно вивести</td>
+	</tr>
+	<tr>
+		<td>Book&amp; Catalog::getBook(int n)</td>
+		<td>Повернення посилання на вибрану книги</td>
+		<td>int n</td>
+		<td>Номер книги, посилання на якуповертається</td>
+	</tr>
+	<tr>
+		<td>worcker Librariar::getGroop()</td>
+		<td>Повернення групу бібліотекаря</td>
+		<td>Без параметрів</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>void Librariar::setGroop(int tipe)</td>
+		<td>Встановлення групи бібліотекаря</td>
+		<td>int tipe</td>
+		<td>Код типу</td>
+	</tr>
+	<tr>
+		<td>void Library::ChBook(int n)</td>
+		<td>Зміна вибраної книги</td>
+		<td>int n</td>
+		<td>Номер книги, що потрібно змінити</td>
+	</tr>
+	<tr>
+		<td>void Library::ChBook(int n)</td>
+		<td>Виведення інформації про вибрану книги</td>
+		<td>int n</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>Catalog&amp; Library::getCatalog()</td>
+		<td>Повернення посилання на каталог</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>int Library::getStudy()</td>
+		<td>Повернення обмежень на час використання навчальної літератури</td>
+		<td>Без параметрів</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>int Library::getFiction()</td>
+		<td>Повернення обмежень на час використання художньої літератури</td>
+		<td>Без параметрів</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>void Library::setElectric(bool av)</td>
+		<td>Встановлення наявності/відсутності світла</td>
+		<td>bool av</td>
+		<td>Маркер наявності/відсутності світла</td>
+	</tr>
+	<tr>
+		<td>void Library::setStudy(int limit)</td>
+		<td>Встановлення обмежень на час використання навчальної літератури</td>
+		<td>int limit</td>
+		<td>Максимальни час утримання навчальної літератури</td>
+	</tr>
+	<tr>
+		<td>void Library::setFiction(int limit)</td>
+		<td>Встановлення обмежень на час використання художньої літератури</td>
+		<td>int limit</td>
+		<td>Максимальни час утримання навчальноїхудожньої літератури</td>
+	</tr>
+	<tr>
+		<td>bool Library::getElectric()</td>
+		<td>Повернення наявності/відсутності світла</td>
+		<td>Без параметрів</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>bool PrintScanner::getPrinter()</td>
+		<td>Повернення справності/несправності принтера</td>
+		<td>Без параметрів</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>bool PrintScanner::getScanner()</td>
+		<td>Повернення справності/несправності сканера</td>
+		<td>Без параметрів</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>int PrintScanner::getPaper()</td>
+		<td>Повернення кількості паперу</td>
+		<td>Без параметрів</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>int PrintScanner::getMPaper()</td>
+		<td>Повернення максимальної кількості паперу</td>
+		<td>Без параметрів</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>int PrintScanner::getMPaint()</td>
+		<td>Повернення максимальної кількості фарби</td>
+		<td>Без параметрів</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>void PrintScanner::AssesOfPrinter(bool asses)</td>
+		<td>Визначення доступності принтера</td>
+		<td>bool asses</td>
+		<td>Модифікатор доступності</td>
+	</tr>
+	<tr>
+		<td>void PrintScanner::AssesOfScaner(bool asses)</td>
+		<td>Визначення доступності сканера</td>
+		<td>bool asses</td>
+		<td>Модифікатор доступності</td>
+	</tr>
+	<tr>
+		<td>void PrintScanner::PutPaper(int numb)</td>
+		<td>Додавання паперу</td>
+		<td>int numb</td>
+		<td>Кількість доданого паперу</td>
+	</tr>
+	<tr>
+		<td>void PrintScanner::PutPaint(int numb)</td>
+		<td>Додавання фарби</td>
+		<td>int numb</td>
+		<td>Кількість доданого паперу</td>
+	</tr>
+	<tr>
+		<td height="25">void PrintScanner::setMPaper(int numb)</td>
+		<td height="25">Встановлення максимальної кількості паперу</td>
+		<td height="25">int numb</td>
+		<td height="25">Максимальна кількість паперу</td>
+	</tr>
+	<tr>
+		<td height="25">void PrintScanner::setMPaint(int numb)</td>
+		<td height="25">Встановлення максимальної кількості фарби</td>
+		<td height="25">int numb</td>
+		<td height="25">Максимальна кількість фарби</td>
+	</tr>
+	<tr>
+		<td height="25">int ReadingRoom::getScanPrise()</td>
+		<td height="25">Повернення вартості скану</td>
+		<td height="25">Без параметрів</td>
+		<td height="25">&nbsp;</td>
+	</tr>
+	<tr>
+		<td height="25">int ReadingRoom::getCopyPrise()</td>
+		<td height="25">Повернення вартості копії</td>
+		<td height="25">Без параметрів</td>
+		<td height="25">&nbsp;</td>
+	</tr>
+	<tr>
+		<td height="25">bool ReadingRoom::getStayWiFi()</td>
+		<td height="25">Повернути стан WiFi</td>
+		<td height="25">Без параметрів</td>
+		<td height="25">&nbsp;</td>
+	</tr>
+	<tr>
+		<td height="25">void ReadingRoom::AssesOfWiFi(bool asses)</td>
+		<td height="25">Встановити стан WiFi</td>
+		<td height="25">bool asses</td>
+		<td height="25">Модифікатор доступності WiFi</td>
+	</tr>
+	<tr>
+		<td height="25">void ReadingRoom::setScanPrise(int prise)</td>
+		<td height="25">Встановлення вартості скану</td>
+		<td height="25">int prise</td>
+		<td height="25">Вартість скану</td>
+	</tr>
+	<tr>
+		<td height="25">void ReadingRoom::setCopyPrise(int prise)</td>
+		<td height="25">Встановлення вартості копії</td>
+		<td height="25">int prise</td>
+		<td height="25">Вартість копії</td>
+	</tr>
+	<tr>
+		<td height="25">std::string User::getLogin()</td>
+		<td height="25">Повернення логіну</td>
+		<td height="25">Без параметрів</td>
+		<td height="25">&nbsp;</td>
+	</tr>
+	<tr>
+		<td height="25">Book&amp; Catalog::getBook(int n)</td>
+		<td height="25">Поверння посилання на обрану книгу</td>
+		<td height="25">int n</td>
+		<td height="25">Номер книги</td>
+	</tr>
+	<tr>
+		<td height="25">int User::getNumbBook()</td>
+		<td height="25">Отримання кількості книг на руках</td>
+		<td height="25">Без параметрів</td>
+		<td height="25">&nbsp;</td>
+	</tr>
+	<tr>
+		<td height="25">int User::getNumbDebts()</td>
+		<td height="25">Отриматиння кількості боргів</td>
+		<td height="25">Без параметрів</td>
+		<td height="25">&nbsp;</td>
+	</tr>
+	<tr>
+		<td height="25">std::string User::getPassword()</td>
+		<td height="25">Отримання паролю</td>
+		<td height="25">Без параметрів</td>
+		<td height="25">&nbsp;</td>
+	</tr>
+	<tr>
+		<td height="25">groop User::getUserGroop()</td>
+		<td height="25">Отримати групу користувачів</td>
+		<td height="25">Без параметрів</td>
+		<td height="25">&nbsp;</td>
+	</tr>
+	<tr>
+		<td height="25">void User::setLogin(std::string username)</td>
+		<td height="25">Встановлення логіну</td>
+		<td height="25">std::string username</td>
+		<td height="25">Новий логін</td>
+	</tr>
+	<tr>
+		<td height="25">void User::setPassword(std::string pass)</td>
+		<td height="25">Встановлення пароля</td>
+		<td height="25">std::string pass</td>
+		<td height="25">Новий пароль</td>
+	</tr>
+	<tr>
+		<td height="25">void User::setUserGroop(int grup)</td>
+		<td height="25">Встановлення групи користувача</td>
+		<td height="25">int grup</td>
+		<td height="25">Код групи</td>
+	</tr>
+	<tr>
+		<td height="25">User&amp; UserList::getUser(int n)</td>
+		<td height="25">Повернення посилання на обраного користувача</td>
+		<td height="25">int n</td>
+		<td height="25">Номер користувача</td>
+	</tr>
+	<tr>
+		<td height="25">void Library::ChouseAction(void)</td>
+		<td height="25">Головне меню</td>
+		<td height="25">Без параметрів</td>
+		<td height="25">&nbsp;</td>
+	</tr>
+	<tr>
+		<td height="25">const void hello()</td>
+		<td height="25">Приклад константного методу</td>
+		<td height="25">Без параметрів</td>
+		<td height="25">&nbsp;</td>
+	</tr>
+	<tr>
+		<td height="25">void ReadingRoom::GiveServises(void)</td>
+		<td height="25">Моделювання надання платих послуг</td>
+		<td height="25">Без параметрів</td>
+		<td height="25">&nbsp;</td>
+	</tr>
+	<tr>
+		<td height="25">void ReadingRoom::pay()</td>
+		<td height="25">Моделювання оплати</td>
+		<td height="25">Без параметрів</td>
+		<td height="25">&nbsp;</td>
+	</tr>
+	<tr>
+		<td height="25">void Book::setBook()</td>
+		<td height="25">Встановлення даних про книгу</td>
+		<td height="25">Без параметрів</td>
+		<td height="25">&nbsp;</td>
+	</tr>
+	<tr>
+		<td height="25">bool Book::operator&amp;&amp;(const Book&amp; bk)</td>
+		<td height="25">Встановлення того, чи обидві книги доступні</td>
+		<td height="25">const Book&amp; bk</td>
+		<td height="25">Посилання на другий операнд</td>
+	</tr>
+	<tr>
+		<td height="25">bool Book::operator||(const Book&amp; bk)</td>
+		<td height="25">Встановлення того, чи хоч одна книга доступна</td>
+		<td height="25">const Book&amp; bk</td>
+		<td height="25">Посилання на другий операнд</td>
+	</tr>
+	<tr>
+		<td height="25">Book Book::operator++()</td>
+		<td height="25">Збільшення значення ціни та стану (не більш ніж до 
+		п*яти)</td>
+		<td height="25">Без параметрів</td>
+		<td height="25">&nbsp;</td>
+	</tr>
+	<tr>
+		<td height="25">Book Book::operator++(int)</td>
+		<td height="25">Збільшення значення ціни та стану (не більш ніж до 
+		п*яти) постфіксно</td>
+		<td height="25">int</td>
+		<td height="25">Фіктивний параметр</td>
+	</tr>
+	<tr>
+		<td height="25">Book Book::operator--()</td>
+		<td height="25">Зменшення значення ціни та стану (обидві не менше нуля)</td>
+		<td height="25">Без параметрів</td>
+		<td height="25">&nbsp;</td>
+	</tr>
+	<tr>
+		<td height="25">Book Book::operator--(int)</td>
+		<td height="25">Зменшення значення ціни та стану (обидві не менше нуля) 
+		постфіксно</td>
+		<td height="25">int</td>
+		<td height="25">Фіктивний параметр</td>
+	</tr>
+	<tr>
+		<td height="25">Book Book::operator+(const Book&amp; b) const</td>
+		<td height="25">Створення двотомника</td>
+		<td height="25">const Book&amp; b</td>
+		<td height="25">Посилання на другий операнд</td>
+	</tr>
+	<tr>
+		<td height="25">Book&amp; Book::operator+=(const Book&amp; b)</td>
+		<td height="25">Створення двотомника і прийняття за такий першого 
+		операнду</td>
+		<td height="25">const Book&amp; b</td>
+		<td height="25">Посилання на другий операнд</td>
+	</tr>
+	<tr>
+		<td height="25">void Catalog::AddBook()</td>
+		<td height="25">Додавання книги</td>
+		<td height="25">Без параметрів</td>
+		<td height="25">&nbsp;</td>
+	</tr>
+	<tr>
+		<td height="25">void Catalog::operReload(int book1, int book2)</td>
+		<td height="25">Демонстрація переозначених операторів</td>
+		<td height="25">int book1, int book2</td>
+		<td height="25">Номери книг, над якими здійснюються операції</td>
+	</tr>
+	<tr>
+		<td height="25">void Catalog::LookAll(void)</td>
+		<td height="25">Переглянути усі книги</td>
+		<td height="25">Без параметрів</td>
+		<td height="25">&nbsp;</td>
+	</tr>
+	<tr>
+		<td height="25">void Library::LoanBook(int numbbook, int numbuser)</td>
+		<td height="25">Видача книги</td>
+		<td height="25">int numbbook, int numbuser</td>
+		<td height="25">Номер книги, номер облікового запису читача</td>
+	</tr>
+	<tr>
+		<td height="25">bool User::operator&gt;(const User&amp; us)</td>
+		<td height="25">Порівняння кількості книг, якими користувався користувач</td>
+		<td height="25">const User&amp; us</td>
+		<td height="25">Посилання на другий операнд</td>
+	</tr>
+	<tr>
+		<td height="25">bool User::operator&lt;(const User&amp; us)</td>
+		<td height="25">Порівняння кількості книг, якими користувався користувач</td>
+		<td height="25">const User&amp; us</td>
+		<td height="25">Посилання на другий операнд</td>
+	</tr>
+	<tr>
+		<td height="25">bool User::operator&gt;=(const User&amp; us)</td>
+		<td height="25">Порівняння кількості книг, якими користувався користувач</td>
+		<td height="25">const User&amp; us</td>
+		<td height="25">Посилання на другий операнд</td>
+	</tr>
+	<tr>
+		<td height="25">bool User::operator&lt;=(const User&amp; us)</td>
+		<td height="25">Порівняння кількості книг, якими користувався користувач</td>
+		<td height="25">const User&amp; us</td>
+		<td height="25">Посилання на другий операнд</td>
+	</tr>
+	<tr>
+		<td height="25">void User::findDebts(int maxstad, int maxfict)</td>
+		<td height="25">Пошук кількості боргів</td>
+		<td height="25">int maxstad, int maxfict</td>
+		<td height="25">Максимальні терміни утримання художньої та навчальної 
+		літератури</td>
+	</tr>
+	<tr>
+		<td height="25">void User::NumbOfBook(void)</td>
+		<td height="25">Пошук кількості книг</td>
+		<td height="25">Без параметрів</td>
+		<td height="25">&nbsp;</td>
+	</tr>
+	<tr>
+		<td height="25">void User::pushline(line n)</td>
+		<td height="25">Додавання запису до облікового запису</td>
+		<td height="25">line n</td>
+		<td height="25">Запис, що додається</td>
+	</tr>
+	<tr>
+		<td height="25">istream&amp; operator&gt;&gt;(istream&amp; is, User&amp; us)</td>
+		<td height="25">Внесення даних про користувача</td>
+		<td height="25">istream&amp; is, User&amp; us</td>
+		<td height="25">Посилання на об*єкт класу потоку і на користувача</td>
+	</tr>
+	<tr>
+		<td height="25">void UserList::overloads(int us1, int us2)</td>
+		<td height="25">Демонстрація перевантаження операцій</td>
+		<td height="25">int us1, int us2</td>
+		<td height="25">Номери користувачів, над якими демонструються операції</td>
+	</tr>
+	<tr>
+		<td height="25">void UserList::addUser()</td>
+		<td height="25">Додавання користувача</td>
+		<td height="25">Без параметрів</td>
+		<td height="25">&nbsp;</td>
+	</tr>
+	<tr>
+		<td height="25">int UserList::Autorisation()</td>
+		<td height="25">Авторизація</td>
+		<td height="25">Без параметрів</td>
+		<td height="25">&nbsp;</td>
+	</tr>
+	<tr>
+		<td height="25">void UserList::registration()</td>
+		<td height="25">Реєстрація</td>
+		<td height="25">Без параметрів</td>
+		<td height="25">&nbsp;</td>
+	</tr>
+	<tr>
+		<td height="25">void Book::show()</td>
+		<td height="25">Демонстрація віртуальної функції</td>
+		<td height="25">Без параметрів</td>
+		<td height="25">&nbsp;</td>
+	</tr>
+	<tr>
+		<td height="25">void SpesialBook::show()</td>
+		<td height="25">Демонстрація віртуальної функції</td>
+		<td height="25">Без параметрів</td>
+		<td height="25">&nbsp;</td>
+	</tr>
+	<tr>
+		<td height="25">void Library::setCurrentDate(date dat)</td>
+		<td height="25">Встановлення дати</td>
+		<td height="25">date dat</td>
+		<td height="25">Поточна дата</td>
+	</tr>
+	<tr>
+		<td height="25">date Library::getCurrentDate()</td>
+		<td height="25">Повернення поточної дати</td>
+		<td height="25">Без параметрів</td>
+		<td height="25">&nbsp;</td>
+	</tr>
+	<tr>
+		<td height="25">void Library::defineDate()</td>
+		<td height="25">Встановлення поточної дати</td>
+		<td height="25">Без параметрів</td>
+		<td height="25">&nbsp;</td>
+	</tr>
+	<tr>
+		<td height="25">void Library::NewDay()</td>
+		<td height="25">Новий день (збільшити дату на один день)</td>
+		<td height="25">Без параметрів</td>
+		<td height="25">&nbsp;</td>
+	</tr>
+	<tr>
+		<td height="25">void UserList::NewDay()</td>
+		<td height="25">Новий день (збільшити тривалість утримання книг на один 
+		день)</td>
+		<td height="25">Без параметрів</td>
+		<td height="25">&nbsp;</td>
+	</tr>
+	<tr>
+		<td height="25">void User::newDay(int n)</td>
+		<td height="25">Збільшення тривалості утримання усіх книг, що на руках, 
+		на один день</td>
+		<td height="25">int n</td>
+		<td height="25">Номер користувача</td>
+	</tr>
+	<tr>
+		<td height="25">void ErrorBook::notFound()</td>
+		<td height="25">Обробка виключної ситуації &quot;Книгу не знайдено&quot;</td>
+		<td height="25">Без параметрів</td>
+		<td height="25">&nbsp;</td>
+	</tr>
+	<tr>
+		<td height="25">void EmptyCatalog::noBook()</td>
+		<td height="25">Обробка виключної ситуації &quot;Каталог порожній&quot;</td>
+		<td height="25">Без параметрів</td>
+		<td height="25">&nbsp;</td>
+	</tr>
+	<tr>
+		<td height="25">void ErrorUser::AutorisError()</td>
+		<td height="25">Обробка виключної ситуації &quot;Невірний логін або пароль&quot;</td>
+		<td height="25">Без параметрів</td>
+		<td height="25">&nbsp;</td>
+	</tr>
+	<tr>
+		<td height="25">void WasntTaken::noBook()</td>
+		<td height="25">Обробка виключної ситуації &quot;Книга, що повертається, не 
+		була видана&quot;</td>
+		<td height="25">Без параметрів</td>
+		<td height="25">&nbsp;</td>
+	</tr>
+	<tr>
+		<td height="25">void EmptyUsList::noUser()</td>
+		<td height="25">Обробка виключної ситуації &quot;Немає зареєстрованих 
+		користувачів&quot;</td>
+		<td height="25">Без параметрів</td>
+		<td height="25">&nbsp;</td>
+	</tr>
+	<tr>
+		<td height="25">void Debth::debthBook()</td>
+		<td height="25">Обробка виключної ситуації &quot;Користувач, що намагається 
+		взяти книгу, має борги</td>
+		<td height="25">Без параметрів</td>
+		<td height="25">&nbsp;</td>
+	</tr>
+	<tr>
+		<td height="25">void Library::PotBookBeck(std::string cod, int nuse)</td>
+		<td height="25">Повернення книги</td>
+		<td height="25">std::string cod, int nuse</td>
+		<td height="25">Код книги, номер користувача у списку</td>
+	</tr>
+	<tr>
+		<td height="25">void Library::DefineRool()</td>
+		<td height="25">Визначення правил</td>
+		<td height="25">Без параметрів</td>
+		<td height="25">&nbsp;</td>
+	</tr>
+</table>
+<h3 align="center"><span lang="uk">Файлова структура проекту</span></h3>
+<p align="center">
+<img border="0" src="FileStruct7.png" width="195" height="529"></div>
+
+</body>
+
+</html>

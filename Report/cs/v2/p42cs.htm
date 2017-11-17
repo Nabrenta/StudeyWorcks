@@ -1,0 +1,185 @@
+<html>
+
+
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Об*єктно-орієнтована декомпозиція предметного середовища - версія 1</title>
+	<style>
+	A {
+		color: black;
+	}
+	A:visited {
+		color: black;
+	}
+	A:hover {
+		color: red;
+	}
+	.linc {
+		display: inline;
+		border: 3px ridge #ffaa77;
+		margin: 1px;
+		background-color: #efc189;
+	}
+	.linc2{
+		border: 3px ridge #ffaa77;
+		background-color: #efc189;
+		width:23%
+	}
+	.content{
+		border: 5px ridge #5634ff;
+		position: absolute;
+				top: 20%;
+		left: 25%;
+		background-color: #efc189;
+	}
+	.menu1 {
+		margin-top: 1%;
+	} 
+	</style>
+</head>
+<body bgcolor="#d9a149">
+
+<h1><a href="../../index.htm">На Головну</a></h1>
+
+<div class = "linc"><a href="../../p1cs.htm">Версія 1</a></div>
+<div class = "linc"><a href="p12cs.htm"><font color="#0000FF">Версія 2</font></a></div>
+
+<div class = "menu1">
+<div class = "linc2"><a href="p12cs.htm">Характеристика об*єкта декомпозиції</a></div>
+<div class = "linc2" style="width: 175px; height: 25px"><a href="p32cs.htm">Проектування ПЗ
+	</a> </div>
+<div class = "linc2"><a href="p42cs.htm"><font color="#0000FF">Кодування</font></a></div>
+<div class = "linc2"><a href="p52cs.htm">Впровадження та супроводження</a></div>
+<div class = "linc2"><a href="p62cs.htm">Висновки</a></div>
+</div>
+
+<div class = "content">
+
+<h2></h2>
+<h2 align="center">HIPO-<span lang="uk">діаграма</span></h2>
+<p><img border="0" src="HIPO2cs.png" width="518" height="266"></p>
+<h2 align="center"><span lang="uk">Опис програми:</span></h2>
+<table border="1" width="100%">
+	<tr>
+		<td><span lang="uk"><b>Прототип функції</b></span></td>
+		<td><b><span lang="uk">Семантика функції</span></b></td>
+		<td><b><span lang="uk">Параментри</span></b></td>
+		<td><b><span lang="uk">Семантика параметрів</span></b></td>
+	</tr>
+	<tr>
+		<td>Book::Book()</td>
+		<td><span lang="uk">Конструктор по замовченню</span></td>
+		<td><span lang="uk">Без параметрів</span></td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>Book:: Book(const Book&amp; otherBook)</td>
+		<td><span lang="uk">Конструктор копії</span></td>
+		<td>const Book&amp; otherBook</td>
+		<td><span lang="uk">Посилання на об*єкт, що копіюється</span></td>
+	</tr>
+	<tr>
+		<td>Catalog::Catalog()</td>
+		<td><span lang="uk">Конструктор за замовченням</span></td>
+		<td>Без параметрів</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>Catalog::Catalog(const Catalog&amp;cat)</td>
+		<td><span lang="uk">Конструктор копії</span></td>
+		<td>const Catalog&amp;cat</td>
+		<td><span lang="uk">Посилання на об*єкт, що копіюється</span></td>
+	</tr>
+	<tr>
+		<td>Librariar::Librariar()</td>
+		<td><span lang="uk">Конструктор за замовченням</span></td>
+		<td><span lang="uk">Без параметрів</span></td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>Librariar::Librariar(int i)</td>
+		<td><span lang="uk">Конструктор перетворення типів</span></td>
+		<td>int i</td>
+		<td><span lang="uk">Посилання на змінну, тип якої перетворюється</span></td>
+	</tr>
+	<tr>
+		<td>Librariar::Librariar(const Librariar &amp;libr)</td>
+		<td><span lang="uk">Конструктор копії</span></td>
+		<td>const Librariar &amp;libr</td>
+		<td><span lang="uk">Посилання на об*єкт, що копіюється</span></td>
+	</tr>
+	<tr>
+		<td>Library::Library()</td>
+		<td><span lang="uk">Конструктор за замовченням</span></td>
+		<td>Без параметрів</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>Library::Library(int numb1, int numb2, bool light, int mode)</td>
+		<td><span lang="uk">Конструктор ініціалізації</span></td>
+		<td>int numb1, int numb2, bool light, int mode</td>
+		<td><span lang="uk">Змінні, значеннями яких ініціалізуються атрибути</span></td>
+	</tr>
+	<tr>
+		<td>Library::Library(const Library&amp;lib)</td>
+		<td><span lang="uk">Конструктор копії</span></td>
+		<td>const Library&amp;lib</td>
+		<td><span lang="uk">Посилання на об*єкт, що копіюється</span></td>
+	</tr>
+	<tr>
+		<td>PrintScanner::PrintScanner()</td>
+		<td><span lang="uk">Конструктор за замовченням</span></td>
+		<td><span lang="uk">Без параметрів</span></td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>PrintScanner::PrintScanner(const PrintScanner&amp;prin)</td>
+		<td><span lang="uk">Конструктор копії</span></td>
+		<td>const PrintScanner&amp;prin</td>
+		<td><span lang="uk">Посилання на об*єкт, що копіюється</span></td>
+	</tr>
+	<tr>
+		<td>ReadingRoom::ReadingRoom()</td>
+		<td><span lang="uk">Конструктор за замовченням</span></td>
+		<td><span lang="uk">Без параметрів</span></td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>ReadingRoom::ReadingRoom(const ReadingRoom&amp; read)</td>
+		<td><span lang="uk">Конструктор копії</span></td>
+		<td>const ReadingRoom&amp; read</td>
+		<td><span lang="uk">Посилання на об*єкт, що копіюється</span></td>
+	</tr>
+	<tr>
+		<td>User::User()</td>
+		<td><span lang="uk">Конструктор за замовченням</span></td>
+		<td><span lang="uk">Без параметрів</span></td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>User::User(const User&amp;us)</td>
+		<td><span lang="uk">Конструктор копії</span></td>
+		<td>const User&amp;us</td>
+		<td><span lang="uk">Посилання на об*єкт, що копіюється</span></td>
+	</tr>
+	<tr>
+		<td>UserList::UserList()</td>
+		<td><span lang="uk">Конструктор за замовченням</span></td>
+		<td>Без параметрів</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>UserList::UserList(const UserList&amp;uslist)</td>
+		<td><span lang="uk">Конструктор копії</span></td>
+		<td>const UserList&amp;uslist</td>
+		<td><span lang="uk">Посилання на об*єкт, що копіюється</span></td>
+	</tr>
+	</table>
+<h3 align="center"><span lang="uk">Файлова структура проекту</span></h3>
+<p align="center">
+<img border="0" src="../structcs1.png" width="196" height="293"></div>
+
+</body>
+
+</html>

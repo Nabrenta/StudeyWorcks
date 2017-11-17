@@ -1,0 +1,31 @@
+﻿Build started 24.12.2016 0:47:44.
+     1>Project "D:\РГР2к\V4\Version1\Version1\Version1.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         D:\VisualStudio\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Book.cpp Catalog.cpp Library.cpp User.cpp UserList.cpp main.cpp
+         Library.cpp
+         Book.cpp
+         Generating Code...
+         Compiling...
+         Catalog.cpp
+     1>d:\ргр2к\v4\version1\version1\catalog.cpp(73): warning C4018: '<' : signed/unsigned mismatch
+         Generating Code...
+         Skipping... (no relevant changes detected)
+         main.cpp
+         UserList.cpp
+         User.cpp
+       Link:
+         D:\VisualStudio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\РГР2к\V4\Version1\Debug\Version1.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\РГР2к\V4\Version1\Debug\Version1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\РГР2к\V4\Version1\Debug\Version1.lib" /MACHINE:X86 Debug\Book.obj
+         Debug\Catalog.obj
+         Debug\Librariar.obj
+         Debug\Library.obj
+         Debug\main.obj
+         Debug\PrintScanner.obj
+         Debug\ReadingRoom.obj
+         Debug\User.obj
+         Debug\UserList.obj
+         Version1.vcxproj -> D:\РГР2к\V4\Version1\Debug\Version1.exe
+     1>Done Building Project "D:\РГР2к\V4\Version1\Version1\Version1.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:17.14

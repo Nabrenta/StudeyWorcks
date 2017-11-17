@@ -1,0 +1,899 @@
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Характеристика об*єкта автоматизації - версія 1</title>
+	<style>
+	A {
+		color: black;
+	}
+	A:visited {
+		color: black;
+	}
+	A:hover {
+		color: red;
+	}
+	.linc {
+		display: inline;
+		border: 3px ridge #ffaa77;
+		margin: 1px;
+		background-color: #efc189;
+	}
+	.linc2{
+		border: 3px ridge #ffaa77;
+		background-color: #efc189;
+		width:23%
+	}
+	.content{
+		border: 5px ridge #5634ff;
+		position: absolute;
+				top: 20%;
+		left: 25%;
+		background-color: #efc189;
+	}
+	.menu1 {
+		margin-top: 1%;
+	} 
+	</style>
+</head>
+<body bgcolor="#d9a149">
+
+<h1><a href="../../index.htm">На Головну</a></h1>
+
+<a name="top"></a>
+<div class = "linc"><a href="p1cs.htm"><font color="#0000FF">Версія 1</font></a></div>
+<div class = "linc"><a href="../v2/p12cs.htm">Версія 2</a></div>
+
+<div class = "menu1">
+<div class = "linc2"><a href="p1cs.htm"><font color="#0000FF">Характеристика об*єкта автоматизації</font></a></div>
+<div class = "linc2"><a href="p2cs.htm">Об*єктно орієнтована декомпозиція предметного середовища
+	</a></div>
+<div class = "linc2"><a href="p3cs.htm">Проектування ПЗ </a> </div>
+<div class = "linc2"><a href="p4cs.htm">Кодування</a></div>
+<div class = "linc2"><a href="p5cs.htm">Впровадження та супроводження</a></div>
+<div class = "linc2"><a href="p6cs.htm">Висновки</a></div>
+</div>
+
+<div class = "content">
+
+<h2 align="center">Опис предметного середовища</h2>
+<p LANG="uk-UA" STYLE="margin-bottom: 0cm" align="justify">
+<font COLOR="#000000">Об*эктом автоматизац<span lang="uk">ії є робота 
+науково-технічної бібліотеки ВНЗ. В системі задіяні читач, бібліотекар і 
+адміністратор.</span></font></p>
+<p LANG="uk" STYLE="margin-bottom: 0cm" align="justify">Читач користується 
+послугами бібліотеки, що включає в себе взяття книг, повернення книг, 
+користування мережею <span lang="en-us">WiFi </span>та замовлення ксерокопій або 
+сканів.</p>
+<p LANG="uk" STYLE="margin-bottom: 0cm" align="justify">Взяття книги, повернення 
+книги та користування мережею <span lang="en-us">WiFi</span> включають у себе 
+авторизацію (що передбачає пошук облікового запису читача у базі). Також взяття 
+книги включає в себе визначення потрібної книги, що може включати пошук книги в 
+базі.</p>
+<p LANG="uk" STYLE="margin-bottom: 0cm" align="justify">Бібліотекар працює з 
+читачами, що включає в себе видау книг, прийняття книг і надання послуг мережі
+<span lang="en-us">WiFi</span>.</p>
+<p LANG="uk" STYLE="margin-bottom: 0cm" align="justify">Видача кнги включає 
+пошук книги в базі і включає або внесення в формуляр запису про взяття книги, 
+або внесення в формуляр запису про користування книгою в читальному залі. 
+Внесення в формуляр запису про взяття книги включає в себе перевірку відсутності 
+боргів і перевірку відсутності перебору. Внесення в формуляр запису про 
+користування книгою в читальному залі може включати в себе копіювання окремих 
+сторінок (за допомогою принтер-копіру), що включає в себе або оплату готівкою, 
+або оплату банківською карткою.</p>
+<p LANG="uk" STYLE="margin-bottom: 0cm" align="justify">Прийняття книги включає 
+в себе внесеня в формуляр примітки про повернення книги, що ключає в себе оцінку 
+книги.</p>
+<p LANG="uk" STYLE="margin-bottom: 0cm" align="justify">Адміністратор займається 
+обробкою бази даних, що включає в себе ведення правил користування, ведення бази 
+книг і ведення облікових записів.</p>
+<p LANG="uk-UA" STYLE="margin-bottom: 0cm" align="justify">
+<a href="#top">[up]</a></p>
+<h4 LANG="uk-UA" STYLE="margin-bottom: 0cm" align="justify">
+&nbsp;<font COLOR="#000000">Виключні ситуації:</font></h4>
+<p LANG="uk-UA" STYLE="margin-bottom: 0cm" align="justify">
+&nbsp;</p>
+<p LANG="uk-UA" STYLE="margin-bottom: 0cm" align="justify"><font COLOR="#000000">
+Читач не має документів:</font></p>
+<p LANG="uk-UA" STYLE="margin-bottom: 0cm" align="justify"><font COLOR="#000000">
+Бібліотекар відмовляється його обслуговувати.</font></p>
+<p LANG="uk-UA" STYLE="margin-bottom: 0cm" align="justify"><br>
+&nbsp;</p>
+<p LANG="uk-UA" STYLE="margin-bottom: 0cm" align="justify"><font COLOR="#000000">
+Читач, що намагається взяи книгу, має борги (книги, що не повернені вчасно) або 
+максимально допустиму кількість книг на руках:</font></p>
+<p LANG="uk-UA" STYLE="margin-bottom: 0cm" align="justify"><font COLOR="#000000">
+Бібліотекар не може видати книгу і просить читача повернути заборговані книги 
+або частину книг, що знаходяться в читача на руках.</font></p>
+<p LANG="uk-UA" STYLE="margin-bottom: 0cm" align="justify"><br>
+&nbsp;</p>
+<p LANG="uk-UA" STYLE="margin-bottom: 0cm" align="justify"><font COLOR="#000000">
+Читач відмовляється брати книгу для використання в читальному залі:</font></p>
+<p LANG="uk-UA" STYLE="margin-bottom: 0cm" align="justify"><font COLOR="#000000">
+Бібліотекар не вносить жодних поміток у формуляр, читач йде бібліотеки.</font></p>
+<p LANG="uk-UA" STYLE="margin-bottom: 0cm" align="justify"><br>
+&nbsp;</p>
+<p LANG="uk-UA" STYLE="margin-bottom: 0cm" align="justify"><font COLOR="#000000">
+Інша бібліотека відмовляється надати книгу для тимчасового користування:</font></p>
+<p LANG="uk-UA" STYLE="margin-bottom: 0cm" align="justify"><font COLOR="#000000">
+Бібліотекар пропонує читачеві звернутися беспосередньо до 
+бібліотеки-відправника, жодні помітки в формуляр не вносяться.</font></p>
+<p LANG="uk-UA" STYLE="margin-bottom: 0cm" align="justify"><br>
+&nbsp;</p>
+<p LANG="uk-UA" STYLE="margin-bottom: 0cm" align="justify"><font COLOR="#000000">
+Читач повертає книгу в незадовільному стані:</font></p>
+<p LANG="uk-UA" STYLE="margin-bottom: 0cm" align="justify"><font COLOR="#000000">
+Бібліотекар не приймає книгу, читач може сплатити вартість книги або придбати і 
+принести аналогічну.</font></p>
+<p LANG="uk-UA" STYLE="margin-bottom: 0cm" align="justify"><br>
+&nbsp;</p>
+<p LANG="uk-UA" STYLE="margin-bottom: 0cm" align="justify"><font COLOR="#000000">
+Читач обирає для ксерокопіювання чи сканування сторінки, яких у книзі немає:</font></p>
+<p LANG="uk-UA" STYLE="margin-bottom: 0cm" align="justify"><font COLOR="#000000">
+Бібліотекар повідомляє читача про те, що таких сторінок не існує.</font></p>
+<p LANG="uk-UA" STYLE="margin-bottom: 0cm" align="justify"><br>
+&nbsp;</p>
+<p LANG="uk-UA" STYLE="margin-bottom: 0cm" align="justify"><font COLOR="#000000">
+Чита відмовляється від ксерокопіювання/сканування, дізнавшись ціну:</font></p>
+<p LANG="uk-UA" STYLE="margin-bottom: 0cm" align="justify"><font COLOR="#000000">
+Послуга не надається, жодні помітки в формуляр не вносяться.</font></p>
+<p LANG="uk-UA" STYLE="margin-bottom: 0cm" align="justify"><br>
+&nbsp;</p>
+<p LANG="uk-UA" STYLE="margin-bottom: 0cm" align="justify"><font COLOR="#000000">
+Читач не має носія для сканування:</font></p>
+<p LANG="uk-UA" STYLE="margin-bottom: 0cm" align="justify"><font COLOR="#000000">
+Бібліотекар пропонує читачеві придбати диск. Якщо читач погоджується, послуга 
+виконуєтьсянадається, читач повинен оплатити вартість не тільки книги, але й 
+диску; якщо читач не погоджується, послуга не надається.</font></p>
+<p LANG="uk-UA" STYLE="margin-bottom: 0cm" align="justify"><br>
+&nbsp;</p>
+<p LANG="uk-UA" STYLE="margin-bottom: 0cm" align="justify"><font COLOR="#000000">
+Сканер/копір несправний:</font></p>
+<p LANG="uk-UA" STYLE="margin-bottom: 0cm" align="justify"><font COLOR="#000000">
+Бібліотекар повідомляє читачеві про неможливість надати послугу.</font></p>
+<p LANG="uk-UA" STYLE="margin-bottom: 0cm" align="justify"><br>
+&nbsp;</p>
+<p LANG="uk-UA" STYLE="margin-bottom: 0cm" align="justify"><font COLOR="#000000">
+Читач відмовляється від ксерокопії/сканування після виконання :</font></p>
+<p LANG="uk-UA" STYLE="margin-bottom: 0cm" align="justify"><font COLOR="#000000">
+Послуга вважається наданою, інформація про заборгованість вноситься в формуляр і 
+вважається рівноцінною не повернутій вчасно книзі (пок читач не поверне грощі, 
+йому не можуть бути видані книги).</font></p>
+<a href="#top">[up]</a>
+
+<p LANG="uk-UA" STYLE="margin-bottom: 0cm" align="justify">&nbsp;</p>
+<h3 LANG="uk-UA" STYLE="margin-bottom: 0cm">Мета розробки:</h3>
+<ol>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Зменшення витрат часу читачів та 
+	працівників бібліотеки</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Спонукання читачів до 
+	користування бібліотекою</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Зменшення кількості випадків 
+	втрати книг</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Максимізація прибутку</li>
+</ol>
+<p><a href="#top">[up]</a>
+</p>
+<h3 LANG="uk-UA" STYLE="margin-bottom: 0cm">Бізнес-задачі</h3>
+<ol>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Ведення системи електронних 
+	формулярів</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Ведення електронного каталогу 
+	книг</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Ведення автоматичного контролю за 
+	дотриманням правил користування бібліотекою</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Організація надавання послуг 
+	сканування та ксерокопії</li>
+	<li>
+	<p STYLE="margin-bottom: 0cm"><span LANG="uk-UA">Організація надання доступу 
+	читачам до електромережі і точок доступу </span><span LANG="en-US">WiFi</span></li>
+</ol>
+
+<a href="#top">[up]</a>
+<h3 LANG="uk-UA" STYLE="margin-bottom: 0cm">Бізнес-процеси</h3>
+<ol>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">
+	<ol>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Створення електронного 
+		формуляру для кожного нового читача (в якості логіну використовувати 
+		номер студентського квитка або пропуску)</li>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Внесення в електронний 
+		формуляр усіх даних про взяття і повернення книг читачем</li>
+	</ol>
+	</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">
+	<ol>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Створення електронного 
+		каталогу усіх книг в зібранні бібліотеки</li>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Визначення для кожної книги 
+		обмежень на користування</li>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Створення системи пошуку в 
+		електронному каталозі</li>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Додавання до каталогу усіх 
+		придбаних бібліотекою книг</li>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Вилучення з каталогу книг, що 
+		з тої чи іншої причини більше не доступні</li>
+	</ol>
+	</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">
+	<ol>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Автоматичний підрахунок часу 
+		перебування книги на руках</li>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Блокування видачі книг при 
+		наявності боргів</li>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Автоматичний підрахунок 
+		кількості книг, що знаходяться на руках</li>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Блокування видачі книг при 
+		наявності на руках максимально допустимої кількості книг.</li>
+	</ol>
+	</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">
+	<ol>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Встановлення сканера-копіра в 
+		читальному залі</li>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Контроль працездатності 
+		сканера-копіра</li>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Заміна картриджів і внесення 
+		чистого паперу</li>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Організація оплати<ol>
+			<li>
+			<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Встановлення касового 
+			апарату</li>
+			<li>
+			<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Встановлення терміналу</li>
+		</ol>
+		</li>
+	</ol>
+	</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">
+	<ol>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Встановлення розеток в 
+		читальних залах</li>
+		<li>
+		<p STYLE="margin-bottom: 0cm"><span LANG="uk-UA">Встановлення точок 
+		доступу </span><span LANG="en-US">WiFi</span><span LANG="uk-UA"> у 
+		читальних залах</span></li>
+		<li>
+		<p STYLE="margin-bottom: 0cm"><span LANG="uk-UA">Організація контролю 
+		користування розетками і точками </span><span LANG="en-US">WiFi</span></li>
+	</ol>
+	</li>
+</ol>
+<a href="#top">[up]</a>
+<p LANG="uk-UA" STYLE="margin-bottom: 0cm" align="justify">&nbsp;</p>
+<h2 LANG="uk-UA" STYLE="margin-bottom: 0cm" align="center">
+<font SIZE="4" STYLE="font-size: 15pt">Сценарії роботи системи</font></h2>
+<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Авторизація</p>
+<ol>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Користувач активує систему і на 
+	стартовій сторінці оберає опцію “авторизація”.</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система просить користувача 
+	ввести ім*я облікового запису і пароль.</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система перевіряє існування такої 
+	пари імені та пароля<ol>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">У випадку, якщо пара не 
+		існує, система виводить на екран повідомлення про невірний пароль або 
+		ім*я облікового запису</li>
+	</ol>
+	</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система вивдить на екрн 
+	привітання і перелік допустимих для даного типу користувача дій.</li>
+</ol>
+<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Пошук літератури</p>
+<ol>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Користувач обирає опцію “Пошук 
+	літератури”.</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система просить користувача 
+	обрати варіант дій: “ввести назву необхідного видання” або “обрати предметну 
+	область зі списку”.</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Якщо користувач обрав опцію 
+	“ввести назву необхідного видання”:<ol>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система просить користувача 
+		ввести назву необхідного видання.</li>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система виводить на екран 
+		перелік видань, що підходять під запит.</li>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Якщо система не може знайти 
+		жодного видання, що підходить під запит, то виводить на екран 
+		повідомлення про неуспішний пошук.</li>
+	</ol>
+	</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Якщо користувач обрав опцію 
+	“обрати предметну область зі списку”:<ol>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система виодить на екран 
+		перелік глобальних областей і просить користувача вибрати одну з них.</li>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система виводить на екран 
+		перелік підобластей обраної області, і просить користувача вибрати одну 
+		з них або вивести вміст обраної області.<ol>
+			<li>
+			<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Дія повторюється, допоки 
+			користува не обрав опцію “вивести зміст вибраної області”, або поки 
+			не вибрав область, що немає підобластей.</li>
+			<li>
+			<p LANG="uk-UA" STYLE="margin-bottom: 0cm">На кожному з етапів, 
+			користувач має можливість обрати опцію “назад” і повернутися до 
+			предметної області попереднього рівня.</li>
+		</ol>
+		</li>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система виводить на екран 
+		перелік видань, що містяться в вибраній області.</li>
+	</ol>
+	</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Якщо користувач обирає опцію 
+	“шукти в інших бібліотеках”, система виводить на екран перелік доступних 
+	бібліотек і просить користувача вибрати потрібну.</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Після вибору, система виводить 
+	список список видань з зібрання вибраної бібліотеки за раніше сформованим 
+	зпитом.</li>
+</ol>
+<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Перегляд облікового запису 
+користувача</p>
+<ol>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Користувач обирає у профілі опцію 
+	“переглянути дані”.</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система виводить на екран 
+	інформацію про користувача.</li>
+</ol>
+<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Видача книг на абонементному 
+відділенні</p>
+<ol>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Бібліотекар обирає опцію “пошук 
+	користувача”.</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система просить бібліотекара 
+	ввести ім*я облікового запису читача</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Якщо обліковий запис з таким 
+	іменем облікового запису знайдений, система відкриває його сторінкувиводить 
+	на екран його профіль<ol>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Якщо обліковий запис не 
+		знайдений, система виводить на екран повідомлення про невірне ім*я 
+		облікового запису</li>
+	</ol>
+	</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Бібліотекар обирає опцію “видача 
+	книги за абонементом” у профілі читача</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Бібліотекар здійснює пошук книги 
+	за названими користувачем параметрами.</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Бібліотекар обирає серед 
+	результатів пошуку найбільш відповідний варіант (спосіб вибору визначається 
+	поза межами системи) і обирає опцію “видати за абонементом”.</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Якщо користувач має борги, або 
+	якщо перевищено допустими максимум взятої на руки літератури, або якщо немає 
+	вільних екземплярів книги, система виводить повідомлення про те, що видачу 
+	книги заборонено, і відповідну причину (наявність боргів, перевищення 
+	допустимої кількості літератури на руках або відсутність вільних 
+	екземплярів).</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">В іншому випадку, система 
+	виводить повідомлення про успішну видачу літератури і вносить інформацію про 
+	взяття книги на руки в профіль читача</li>
+</ol>
+<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Видача літератури для використання в 
+межах читального залу</p>
+<ol>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Бібліотекар обирає опцію “пошук 
+	користувача”</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система пропонує бібліотекарю 
+	варіанти дій: “ввести ім*я облікового запису читача” і “пошук читача за 
+	іменем”.</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Якщо бібліотекар обрав опцію 
+	“ввести ім*я облікового запису читача”:<ol>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система просить бібліотекаря 
+		ввести ім*я облікового запису читача</li>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Якщо обліковий запис з таким 
+		іменем облікового запису знайдений, система відкриває його сторінку<ol>
+			<li>
+			<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Якщо обліковий запис не 
+			знайдений, система виводить на екран повідомлення про невірне ім*я 
+			облікового запису</li>
+		</ol>
+		</li>
+	</ol>
+	</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Якщо бібліотекар обрав опцію 
+	“пошук читача за іменем”:<ol>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система просить бібліотекаря 
+		ввести ім*я та прізвище читача</li>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система виводить всіх 
+		користовачів, що підходять під вказані критерії<ol>
+			<li>
+			<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Якщо таких користувачів 
+			не знайдено, система виводить повідомлення про те, що користувачів з 
+			вказаним іменем не знайдено</li>
+		</ol>
+		</li>
+	</ol>
+	</li>
+</ol>
+<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Бібліотекар обирає потрібного 
+користувача (спосіб вибору визначається поза межами системи).</p>
+<ol>
+	<ol>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система виводить на екран 
+		профіль обраного читача.</li>
+	</ol>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Бібліотекар здійснює пошук книги 
+	за названими користувачем параметрами.</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Бібліотекар обирає серед 
+	результатів пошуку найбільш відповідний варіант (спосіб вибору визначається 
+	поза межами системи) і обирає опцію “видати книгу для користування в межах 
+	читального залу”.</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система автоматично вносить в 
+	обліковий запис користувача запис про факт користування книгою, без вказання 
+	строків.</li>
+</ol>
+<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Прийом книги</p>
+<ol>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Бібліотекар обирає опцію “пошук 
+	користувача”.</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система просить бібліотекара 
+	ввести ім*я облікового запису читача</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Якщо обліковий запис з таким 
+	іменем облікового запису знайдений, система відкриває його сторінкувиводить 
+	на екран його профіль<ol>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Якщо обліковий запис не 
+		знайдений, система виводить на екран повідомлення про невірне ім*я 
+		облікового запису</li>
+	</ol>
+	</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Бібліотекар обирає профілі 
+	користувача запис про книгу, яка підлягає поверненню, і оберає опцію 
+	“повернено”.</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Систем автоматично заносить книгу 
+	в перелік повернутих і зазначає дату повернення.</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система автоматично зменшує 
+	кількість книг, що знаходяться на руках у читача, на одну.</li>
+</ol>
+<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Запит на надання користувачеві права 
+користуватися в межах бібліотеки книгою, що не може бути видана йому на руки.</p>
+<ol>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Бібліотекар на абонементному 
+	відділенні читача обирає опцію “відправити запит на надання читачеві книги в 
+	межах бібіотеки”.</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система автоматично відправляє 
+	бібліотекарю на відділенні, до якого приписана шукана книга, запит про 
+	надання читачеві доступу до книги в межах його відділення бібліотеки.</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Якщо бібліотекар на відділенні, 
+	до якого приписана книга, обирає опцію “надати згоду”:<ol>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Якщо книга вільна, система 
+		відправляє бібліотекарю на абонементному відділенні читача повідомлення 
+		про те, що дозвіл на користування наданий, і автоматично вносить в 
+		обліковий запис користувача запис про факт користування книгою, без 
+		вказання строків.</li>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Якщо книга зайнята, система 
+		виводить на екран повідомлення про неможливість надання книги через те, 
+		що її немає в наявності.</li>
+	</ol>
+	</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Якщо бібліотекар на відділенні, 
+	до якого приписана книга, обирає опцію “відмовити в згоді”:<ol>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система відправляє 
+		бібліотекарю на абонементному відділенні читача повідомлення про те, що 
+		в дозволі на користування відмовлено.</li>
+	</ol>
+	</li>
+</ol>
+<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Відправлення запиту на доставку 
+обраної книги в бібліотеку і надання читачу доступу до неї в межах бібліотеки</p>
+<ol>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Бібліотекар обирає опцію 
+	“відправляти запит на надання читачу доступу до книги в межах бібліотеки”.</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Якщо бібліотека-відправлювач дає 
+	згоду на доступ:<ol>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система відправляє 
+		бібліотекарю на абонементноляму відділенні читача повідомлення про те, 
+		що дозвіл на користування наданий.</li>
+	</ol>
+	</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Якщо бібліотека-відправлювач 
+	відмовляє в доступі:<ol>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система відправляє 
+		бібліотекарю на абонементному відділенні читача повідомлення про те, що 
+		в дозволі на користування відмовлено.</li>
+	</ol>
+	</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Коли книга прибуває до 
+	бібліотеки, система реєструє факт присутності книги в бібліотеці і 
+	відправляє читачу повідомлення про це.</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Коли читач приходить за книгою, 
+	бібліотекар вносить в обліковий запис читача інформацію про короткочавне 
+	користування книгою, з приміткою про те, що книга прибула з іншої 
+	бібліотеки.</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Після того, як книга повертається 
+	до бібліотеки, що її надавала, система реєструє факт того, що книга покинула 
+	бібліотеку.</li>
+</ol>
+<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Надання доступу до електромережі і 
+точок доступу <span LANG="en-US">WiFi</span></p>
+<ol>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Бібліотекар у читальному залі 
+	опцію “пошук користувача”.</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система просить бібліотекара 
+	ввести ім*я облікового запису читача.</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Якщо обліковий запис з таким 
+	іменем облікового запису знайдений, система відкриває його сторінкувиводить 
+	на екран його профіль<ol>
+		<li>
+		<p LANG="en-US" STYLE="margin-bottom: 0cm">Якщо обліковий запис не 
+		знайдений, система виводить на екран повідомлення про невірне ім*я 
+		облікового запису</li>
+	</ol>
+	</li>
+</ol>
+<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Ксерекопіювання або сканування 
+сторінок книги:</p>
+<ol>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Бібліотекар у читальному залі 
+	обирає опцію “ксерокопія та сканування”</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Бібліотекар обирає конкретний вид 
+	послуги</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система виводить на екран 
+	вартість обраної послуги<ol>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Якщо читач відмовився від 
+		послуги, бібліотекар обирає опцію “відмінити операцію”</li>
+	</ol>
+	</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Бібліотекар перевіряє справність 
+	обладнання<ol>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Якщо обладнання несправне, 
+		біблотекар обирає опцію “відмінити операцію”</li>
+	</ol>
+	</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Бібліотекр обирає опцію “оплата 
+	готівкою” чи “оплата карткою”</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система автоматично роздруковує 
+	чек</li>
+</ol>
+<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Додавання книг до зібрання</p>
+<ol>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Адміністратор обирає опцію 
+	“Додати книгу до зібрання”.</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Адміністратор визначає предметну 
+	область, до якої належить книга (аналогічно вибору предметної області при 
+	пошуку, але книга обов*язково повинна бути додана до останнього рівня).</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система просить адміністратора 
+	ввести повну назву книги.</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система просить адміністратора 
+	визначити, до якого відділення бібліотеки віднести книгу (вибор зі списку).</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система просить адміністратора 
+	ввести додаткові обмеження.</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система просить адмінстратора 
+	підтвердити додавання.</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Якщо адміністратор обирає опцію 
+	“підтвердити”:<ol>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система виводить повідомлення 
+		про успішне додавання книги.</li>
+	</ol>
+	</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Якщо адміністратор обирає опцію 
+	“скасувати”:<ol>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система виводить на кран 
+		профіль адміністратора</li>
+	</ol>
+	</li>
+</ol>
+<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Видалення книги з зібрання</p>
+<ol>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Адміністратор обирає книгу і 
+	оберає опцію “видалити”.</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система просить адміністратора 
+	підтвердити видаення.</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Якщо адміністратор обирає опцію 
+	“підтвердити”:<ol>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система виводить повідомлення 
+		про успішне видалення книги.</li>
+	</ol>
+	</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Якщо адміністратор обирає опцію 
+	“скасувати”:<ol>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система виводить на кран 
+		профіль адміністратора.</li>
+	</ol>
+	</li>
+</ol>
+<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Зміна інформації про книгу</p>
+<ol>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Адміністратор обирає книгу і 
+	оберає опцію “змінити”.</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Адміністратор обирає одну з 
+	опцій: “змінити назву”, “змінити предметну область”, “змінити відділення”, 
+	“змінити додаткові обмеження”.</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Якщо адміністратор обрав опцію 
+	“змінити назву”:<ol>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система просить 
+		адміністратора ввести повну назву книги.</li>
+	</ol>
+	</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Якщо адміністратор обрав опцію 
+	“змінити предметну облсть”:<ol>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система просить 
+		адміністратора вибрати нову предметну область.</li>
+	</ol>
+	</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Якщо адміністратор обрав 
+	опцію“змінити відділення”:<ol>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система просить 
+		адміністратора вибрати нове відділння.</li>
+	</ol>
+	</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Якщо адміністратор обрав опцію 
+	“змінити додаткові обмеження”:<ol>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система просить 
+		адміністратора ввести нові додаткові обмеження.</li>
+	</ol>
+	</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система просить адмінстратора 
+	підтвердити зміни.</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Якщо адміністратор обирає опцію 
+	“підтвердити”:<ol>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система виводить повідомлення 
+		про успішне додавання книги.</li>
+	</ol>
+	</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Якщо адміністратор обирає опцію 
+	“скасувати”:<ol>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система виводить на кран 
+		профіль адміністратора.</li>
+	</ol>
+	</li>
+</ol>
+<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Додавання облікового запису</p>
+<ol>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Адміністратор обирає опцію 
+	“додати обліковий запис”.</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система просить адміністратора 
+	обрати тип користувача.</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система просить адміністратора 
+	ввести ім*я облікового запису.</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система просить адміністратора 
+	ввести пароль.</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система просить адміністратора 
+	ввести дані про користувача (для читача — ім*я, прізвище та побатькові, 
+	номер групи і курсу або посада відповідно).</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система просить адмінстратора 
+	підтвердити зміни.</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Якщо адміністратор обирає опцію 
+	“підтвердити”:<ol>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система виводить повідомлення 
+		про успішне додавання користувача.</li>
+	</ol>
+	</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Якщо адміністратор обирає опцію 
+	“скасувати”:<ol>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система виводить на кран 
+		профіль адміністратора.</li>
+	</ol>
+	</li>
+</ol>
+<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Видалення облікового запису</p>
+<ol>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Адміністратор обирає користувача 
+	і оберає опцію “видалити”.</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система просить адміністратора 
+	підтвердити видаення.</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Якщо адміністратор обирає опцію 
+	“підтвердити”:<ol>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система виводить повідомлення 
+		про успішне видалення профілю.</li>
+	</ol>
+	</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Якщо адміністратор обирає опцію 
+	“скасувати”:<ol>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система виводить на кран 
+		профіль адміністратора.</li>
+	</ol>
+	</li>
+</ol>
+<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Зміна облікового запису</p>
+<ol>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Адміністратор обирає користувача 
+	і оберає опцію “змінити”.</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Адміністратор обирає одну з 
+	опцій: “змінити тип користувача”, “змінити ім*я облікового запису”, “змінити 
+	пароль”, “змінити дані про користувача”.</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Якщо адміністратор обрав опцію 
+	“змінити тип користувача”:<ol>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система просить 
+		адміністратора вибрати тип користувача.</li>
+	</ol>
+	</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Якщо адміністратор обрав опцію 
+	“змінити ім*я облікового запису”:<ol>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система просить 
+		адміністратора ввести нове ім*я облікового запису.</li>
+	</ol>
+	</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Якщо адміністратор обрав 
+	опцію“змінити пароль”:<ol>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система просить 
+		адміністратора ввести новий пароль.</li>
+	</ol>
+	</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Якщо адміністратор обрав опцію 
+	“змінити дані про користувача”:<ol>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система просить 
+		адміністратора ввести нові дані про користувача.</li>
+	</ol>
+	</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система просить адмінстратора 
+	підтвердити зміни.</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Якщо адміністратор обирає опцію 
+	“підтвердити”:<ol>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система виводить повідомлення 
+		про успішне додавання книги.</li>
+	</ol>
+	</li>
+	<li>
+	<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Якщо адміністратор обирає опцію 
+	“скасувати”:<ol>
+		<li>
+		<p LANG="uk-UA" STYLE="margin-bottom: 0cm">Система виводить на кран 
+		профіль адміністратора.</li>
+	</ol>
+	</li>
+</ol>
+<a href="#top">[up]</a>
+<p LANG="uk-UA" STYLE="margin-bottom: 0cm"><br>
+&nbsp;</p>
+</div>
+</body>
+</html>
